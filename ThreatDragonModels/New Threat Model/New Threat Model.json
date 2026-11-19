@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "7247124a-3efd-4ec2-816d-bdbbf92c31c2",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "użytkownik",
@@ -144,7 +144,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "granica zaufania\n",
+              "name": "internet\n",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -152,7 +152,7 @@
               "containedElements": []
             },
             "labels": [
-              "granica zaufania\n"
+              "internet\n"
             ],
             "id": "3e62fdfa-21e4-45c3-a2bc-cc4cc4a31594",
             "source": {
@@ -191,6 +191,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -274,7 +275,6 @@
               ]
             },
             "id": "fa3bc1c5-e7a7-4b4a-9b62-9365cce44a1c",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "aplikacja frontend",
@@ -292,8 +292,8 @@
           },
           {
             "position": {
-              "x": 1240,
-              "y": 210
+              "x": 1270,
+              "y": 190
             },
             "size": {
               "width": 120,
@@ -314,6 +314,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -397,7 +398,6 @@
               ]
             },
             "id": "3110a09a-45c1-4b6e-bbdf-f51f0c8e1879",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "baza danych użytkownika",
@@ -434,7 +434,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "rządanie zmiany hasła",
+              "name": "Zapomniałem hasła zmień hasło",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -448,7 +448,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "rządanie zmiany hasła"
+              "Zapomniałem hasła zmień hasło"
             ],
             "id": "d56cb59b-a435-4932-a0f0-875aa4a31527",
             "source": {
@@ -463,6 +463,14 @@
               {
                 "x": 590,
                 "y": 270
+              },
+              {
+                "x": 630,
+                "y": 270
+              },
+              {
+                "x": 730,
+                "y": 240
               }
             ]
           },
@@ -487,6 +495,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -570,7 +579,6 @@
               ]
             },
             "id": "e8b7b120-08b2-4077-869e-d610eb6707f9",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "backend serwer",
@@ -609,7 +617,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "rządanie zmiany hasła",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -623,7 +631,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "rządanie zmiany hasła"
             ],
             "id": "575139a6-c882-4361-8391-3e0697cbc19c",
             "source": {
@@ -633,72 +641,18 @@
             "target": {
               "cell": "e8b7b120-08b2-4077-869e-d610eb6707f9",
               "port": "2ef13716-c6eb-4612-9d89-36d90112c99e"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 13,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "00d0afdd-7fbe-48e5-ad3b-38a83b338302",
-            "source": {
-              "x": 990,
-              "y": 530
-            },
-            "target": {
-              "cell": "3110a09a-45c1-4b6e-bbdf-f51f0c8e1879",
-              "port": "57d71032-1fb4-4234-a7b0-db5950066f43"
             },
             "vertices": [
               {
-                "x": 1080,
-                "y": 390
-              },
-              {
-                "x": 1170,
-                "y": 390
-              },
-              {
-                "x": 1170,
-                "y": 370
+                "x": 910,
+                "y": 410
               }
             ]
           },
           {
             "position": {
-              "x": 1170,
-              "y": 410
+              "x": 1080,
+              "y": 330
             },
             "size": {
               "width": 130,
@@ -716,6 +670,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -799,7 +754,6 @@
               ]
             },
             "id": "3eecf12b-02c5-419c-a714-26ed65b352da",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "tokeny autoryzacji",
